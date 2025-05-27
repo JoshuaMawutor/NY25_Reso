@@ -45,15 +45,36 @@
 
 
 ## PROJECT ON WEIGHT
-weight = float(input("Enter your weight: "))
-unit =  input("unit of convertion (Kg or Lb): ")
-new_unit = unit.lower()
+# weight = float(input("Enter your weight: "))
+# unit =  input("unit of convertion (Kg or Lb): ")
+# new_unit = unit.lower()
+#
+# if new_unit == 'lb':
+#     new_weight = 0.453592 * weight
+#     print("Your weight is " + str(new_weight) + " kg")
+# elif new_unit == 'kg':
+#     new_weight = 2.20462 * weight
+#     print("Your weight is " + str(new_weight) + " lb")
+# else:
+#     print("Invalid unit")
 
-if new_unit == 'lb':
-    new_weight = 0.453592 * weight
-    print("Your weight is " + str(new_weight) + " kg")
-elif new_unit == 'kg':
-    new_weight = 2.20462 * weight
-    print("Your weight is " + str(new_weight) + " lb")
-else:
-    print("Invalid unit")
+
+# LOOPING
+
+#car_drive  =''
+#car_drive = car_drive.lower()
+
+while True:
+    car_drive = input('> ').lower()
+    if car_drive == 'help':
+        print('start - Start car drive \nstop - Stop car drive \nquit- Quit car drive')
+    elif car_drive == 'start':
+            print('start - Start car drive')
+    elif car_drive == 'stop':
+            print('stop - Stop car drive')
+    elif car_drive == 'quit':
+        print('quit- Quit car drive')
+        break
+    else:
+        print('car drive is not supported')
+
